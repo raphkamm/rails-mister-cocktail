@@ -1,0 +1,8 @@
+<h1>Cocktail Infos <%= @cocktail.name %></h1>
+
+<br>
+<%= link_to 'Edit', edit_cocktail_path(@cocktail)%>
+<br>
+<%= link_to 'Delete', cocktail_path(@cocktail), method: 'delete', data: { confirm: "Are you sure?" }%>
+<br>
+<%= link_to "Back to cocktails", cocktails_path %>
